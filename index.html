@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>الهدية التفاعلية</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="lock-screen">
+    <h2>ادخل الرمز السري لتكتشف بعض مما اكتشفه معطي الهدية🌚</h2>
+    <input type="password" id="passwordInput" placeholder="••••" />
+    <button onclick="checkPassword()">دخول</button>
+    <p id="errorMsg" class="error"></p>
+  </div>
+
+  <div class="gift-page" style="display:none;">
+    <h1>🎉 مبروك! لقد اكتشفت الهدية 🎉</h1>
+    <p>هذه هي الصفحة التفاعلية التي تحتوي على مفاجأتك.</p>
+    <div id="gridContainer" class="grid-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
