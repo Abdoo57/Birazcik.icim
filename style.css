@@ -1,0 +1,42 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+}
+#password-screen {
+  margin-top: 20vh;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+.box {
+  background-color: #333;
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 18px;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.box.active {
+  cursor: pointer;
+  background-color: #444;
+  transition: 0.3s;
+}
+.box.active:hover {
+  background-color: #666;
+}
+#text-box {
+  background-color: #000000dd;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 16px;
+}
