@@ -1,117 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <title>🎁 هديتك</title>
-    <style>
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: sans-serif;
-            padding: 20px;
-            text-align: center;
-        }
-        .box {
-            display: inline-block;
-            width: 120px;
-            height: 120px;
-            margin: 8px;
-            background-color: #222;
-            border: 2px solid #ffa500;
-            border-radius: 10px;
-            vertical-align: top;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .box:hover {
-            background-color: #333;
-        }
-        .box span {
-            display: inline-block;
-            margin-top: 40%;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <h1>💝 مفاجأتك التفاعلية</h1>
-    <div id="grid">
-        <div class="box" onclick="showText('sacin')"><span>Saçın</span></div>
-        <div class="box" onclick="showText('kokun')"><span>Kokun</span></div>
-        <div class="box" onclick="showText('ellerin')"><span>Ellerini kullanışın</span></div>
-        <div class="box" onclick="showText('sesin')"><span>Sesin</span></div>
-        <div class="box" onclick="showText('gulusun')"><span>Gülüşün</span></div>
-        <div class="box" onclick="showText('tenin')"><span>Tenin</span></div>
-        <div class="box" onclick="showText('izleyisin')"><span>Etrafı İzleyişin</span></div>
-        <div class="box" onclick="showText('gozlerin')"><span>Gözlerin</span></div>
-        <div class="box" onclick="showText('gamzelerin')"><span>Gamzelerin</span></div>
-        <div class="box" onclick="showText('yuzun')"><span>Yüzün</span></div>
-        <div class="box" onclick="showText('boyun')"><span>Boyun</span></div>
-        <div class="box" onclick="showText('sestonun')"><span>Ses tonun</span></div>
-    </div>
-    <p id="content" style="white-space: pre-line; margin-top: 40px;"></p>
-    <script>
-        const texts = {
-            'sacin': `Sacini dok sineme
-لعنتي المستقبلية
-والفاليوم مالتي حتى انام بالمستقبل
-ممنوع تلازمي بعدين
-اني اشورة الح
-واني امشطة الح
-واني انشفة الح`,
-            'kokun': `ال O2 مالي
-عطر متشبع بجلدج وبهدومج ودا اطببة لجسمي
-اتنفس عطرج بالقدر الي اريدج تكونين بداخلي
-لحد ما بعد رئتي متسحب هوا تقفل
-يعني اتمنى كلج تكونين عطر بالنسبة الي حتى ادخله بيه
-بس تبقى هل خاصية بس العطر يوفرها`,
-            'ellerin': `عشقي من الدنيا
-ما اكول غير بس bana ellerini ver
-شعوري : تحفة فنية وعمل هندسي عظيم
-بهيج شي صغبروني وكيوت وينكط ويخليني
-اگركز واععض
-كلشي مر عليها
-انجرحت بيوم من الايام
-ومسحت الدموع مرة
-وصفتك مرة
-واشتغلت
-وكتبت
-ولزمت كومة امور حلوة ومو حلوة
-واثار القصص العاشتها ايدج كاهن موجودات بايدج
-وعورات واثار
-كلشي جان بيها حلو بس بعدين ما صار
-وحسي روحج وصلت بر الامان مثل ما ابتسمتي هسة 🤙🏼`,
-            'sesin': `My strawberry🔥`,
-            'gulusun': `My slime
-
-جزئي المفضل ولعبة اصابعي الجميلة
-من خليتي خدي وتحسستي خدي
-جان شعوري انو بس رديت الزمن
-يوقف
-وهيج مثلا ابوس فد المليار خليج الي بخدج
-خليج خلية`,
-            'tenin': `تم دمجه مع مربع ellerin — لا يوجد له نص مستقل الآن.`,
-            'izleyisin': `تم دمجه مع مربع ellerin — لا يوجد له نص مستقل الآن.`,
-            'gozlerin': `bir kara kasin bir kara gozun Degier dunya malina.`,
-            'gamzelerin': `السينما مالي
-وتبقى الحيرة بكل مرة اشوفج بيها
-وين اباوع؟
-عينج؟ تنسيني كلامي
-شفتج؟ تجيب لعقلي افكار شيطانية
-خدودج؟ تخليني انفعج واكرصهن
-خشمج؟ يجيني شعور اريد ابوسه
-حواجبي؟ الاثار؟
-حتى حبوب وجهج احبهن
-حجايتج حيرة
-لهل سبب هو اكثر منظر اريد اشاهده بحياتي.`,
-            'yuzun': `My slime`,
-            'boyun': `My slime`,
-            'sestonun': `My slime`
-        };
-
-        function showText(key) {
-            document.getElementById("content").textContent = texts[key] || "🫣";
-        }
-    </script>
-</body>
-</html>
