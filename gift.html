@@ -1,229 +1,0 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>هدية خاصة</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1 style="text-align:center;color:white;padding-top:30px;">💝 هديتك التفاعلية 💝</h1>
-  <div id="grid" class="grid-container">
-    <!-- Sample Interactive Boxes (Example Only) -->
-    <div class="grid-item interactive" onclick="showText(1)">1. saçın</div>
-    <div class="grid-item interactive" onclick="showText(2)">2. kokun</div>
-    <div class="grid-item interactive" onclick="showText(3)">3. ellerin</div>
-    <div class="grid-item interactive" onclick="showText(4)">4. sesin</div>
-    <div class="grid-item interactive" onclick="showText(5)">5. gülüşün</div>
-    <div class="grid-item interactive" onclick="showText(6)">6. tenin</div>
-    <div class="grid-item interactive" onclick="showText(7)">7. etrafı izleyişin</div>
-    <div class="grid-item interactive" onclick="showText(8)">8. gözlerin</div>
-    <div class="grid-item interactive" onclick="showText(9)">9. gamzelerin</div>
-    <div class="grid-item interactive" onclick="showText(10)">10. yüzün</div>
-    <div class="grid-item interactive" onclick="showText(11)">11. boyun</div>
-    <div class="grid-item interactive" onclick="showText(12)">12. ses tonun</div>
-    <div class="grid-item interactive" onclick="showText(13)">13. ayakların</div>
-    <!-- Fill remaining with '?' -->
-    <div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-<div class="grid-item">?</div>
-  </div>
-
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <span class="close" onclick="closePopup()">&times;</span>
-      <p id="popup-text"></p>
-    </div>
-  </div>
-
-  <script>
-    const texts = {
-      1: `Sacini dok sineme
-لعنتي المستقبلية
-والفاليووم مالتي حتى انام بالمستقبل
-ممنوع تلازمي بعدين
-اني اششورك الح
-واني امشطك الح
-واني انشفك الح`,
-      2: `ال O2 مالي
-عطر متشبع بجلدج وبهـدوءج ودا اطبـه لجسمي
-اتنفس عطرج بالقدر الي اريدج تكونين بداخلي
-لحد ما بعد رئتـي متسحب هـوا تقفل
-يعني اتمنى كلج تكونين عطر بالنسبة الي حتى ادخـل بيه
-بس تبقى هل خاصية بس العطر يوفرها`,
-      3: `عشقي من الدنيا
-ما اكول غير بس bana ellerini ver
-شعوري : تحفة فنية وعمل هندسي عظيم
-يبهج شي صغيروني وكيوت وينكـرط ويخليني
-اگـركز واعـضعض
-كلشي مر عليها
-انجرحت بيوم من الايام
-ومسحت الدموع مرة
-وصـفگت مرة
-واشتغلت
-وكتبت
-ولزمت كومة امور حلوة ومو حلوة
-واثار القصص العاشتها ايدج كاهن موجودات بايدج
-وعـورات واثار
-كلهـن متجسدات بيدج الي بوسهن بس راح ينسيني كلشي`,
-      4: `My strawberry 🔥`,
-      5: `My slime
-جزئي المفضل ولعبة اصابعي الجميلة
-من خليتي خدچ وتحسسـتي خدچ
-جان شعوري انو بس ردت الزمن يـوقف
-وهيچ مثلا ابوس فد المليار خليـة الي بخدچ خليـة خليـة`,
-      6: `السينما مالي
-وتبقى الحيرة بكل مرة اشوفچ بيها
-وين اباوع؟
-عينچ؟ تنسيني كلامي
-شفنج؟ تجيب لعقلي افكار شيطانية
-خدودچ؟ تخليني انـفج واكرصهن
-خشـمچ؟ يجيني شعور اريد ابوسـه
-حواجبچ؟ الاثـار؟
-حتى حبوب وجهچ احبهن
-حياتك حيرة
-لهـل سبب هـو اكثر منظر اريد اشاهده بحياتي.`,
-      7: `احس روحي وصلت بر الامان مثل ما ابتسمتي هسه 👌🏼`,
-      8: `bir kara kasin bir kara gozun
-Degier dunya malina.`,
-      9: `ملاحظة: تم دمجه بالكامل مع مربع ellerin — لا يوجد له نص مستقل الآن.`,
-      10: `الشي الي يحسسني انت ماي بيبيي الصغيرونة
-وهلشي يخليني اكـرط
-انت بعيوني معندك شي مال كبار
-كلشي ما اطفال
-ف كلشي يبيـج ينكـرط من جوا ليفوك
-شعوري من مدتـي علية
-مستحيل اكدر اوصفة
-بس جان شي يستحق اسكت...`,
-      11: `My slime`,
-      12: `My slime`,
-      13: `My slime`
-    };
-    function showText(num) {
-      document.getElementById("popup-text").innerText = texts[num] || "لا يوجد نص.";
-      document.getElementById("popup").style.display = "block";
-    }
-    function closePopup() {
-      document.getElementById("popup").style.display = "none";
-    }
-  </script>
-
-  <style>
-    body {
-      background-color: #111;
-      font-family: sans-serif;
-      color: white;
-    }
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(10, 1fr);
-      gap: 10px;
-      padding: 30px;
-      max-width: 90%;
-      margin: auto;
-    }
-    .grid-item {
-      background-color: #222;
-      border: 2px solid orange;
-      padding: 15px;
-      text-align: center;
-      font-size: 16px;
-      border-radius: 10px;
-      cursor: default;
-    }
-    .interactive {
-      cursor: pointer;
-      background-color: #333;
-    }
-    .popup {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.7);
-      justify-content: center;
-      align-items: center;
-    }
-    .popup-content {
-      background: white;
-      color: black;
-      padding: 20px;
-      border-radius: 10px;
-      width: 80%;
-      max-width: 400px;
-      text-align: center;
-    }
-    .close {
-      float: right;
-      font-size: 24px;
-      cursor: pointer;
-    }
-  </style>
-</body>
-</html>
